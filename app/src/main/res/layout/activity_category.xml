@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_7"
+    tools:context=".CategoryActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="415dp"
+        android:layout_height="650dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="170dp"
+                    android:layout_height="186dp"
+                    android:background="@drawable/img_8" />
+
+                <Button
+                    android:id="@+id/txt"
+                    android:layout_width="238dp"
+                    android:layout_height="186dp"
+                    android:fontFamily="serif"
+                    android:text="TXT — южнокорейский бой-бенд, сформированный
+                    в 2019 году компанией Big Hit Entertainment. В состав группы входят пять участников: Субин, Ёнджун, Бомгю, Тэхён и Хюнин Кай."
+                    android:textColor="#000000"
+                    app:backgroundTint="#F1F1F1" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="170dp"
+                    android:layout_height="186dp"
+                    android:background="@drawable/img_9" />
+
+                <Button
+                    android:id="@+id/straykids"
+                    android:layout_width="239dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif"
+                    android:onClick="skClick"
+                    android:text="Stray Kids — южнокорейский бой-бэнд, сформированный в 2017 году компанией JYP Entertainment через одноимённое реалити-шоу на выживание."
+                    android:textColor="#000000"
+                    app:backgroundTint="#F1F1F1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="170dp"
+                    android:layout_height="186dp"
+                    android:background="@drawable/img" />
+
+                <Button
+                    android:id="@+id/gile"
+                    android:layout_width="237dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif"
+                    android:onClick="GidleClick"
+                    android:text="(G)I-dle — южнокорейская гёрл-группа, сформированная в 2018 году компанией Cube Entertainment. Коллектив состоит из пяти участниц: Соëн, Миëн, Минни, Юци и Шухуа.
+"
+                    android:textColor="@color/black"
+                    app:backgroundTint="#F1F1F1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="170dp"
+                    android:layout_height="186dp"
+                    android:background="@drawable/img_1" />
+
+                <Button
+                    android:id="@+id/seventeen"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif"
+                    android:onClick="seventeenClick"
+                    android:text="Seventeen — южнокорейский бойбенд, сформированный в 2015 году компанией Pledis Entertainment. В коллективе задействовано 13 участников."
+                    android:textColor="@color/black"
+                    app:backgroundTint="#F1F1F1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="serif"
+        android:text="Выбирай"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="serif"
+        android:text="ГРУППУ"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="304dp"
+        android:layout_height="32dp"
+        android:fontFamily="serif"
+        android:text="и узнавай насколько ты хороший фанат)"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
